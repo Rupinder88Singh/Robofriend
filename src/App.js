@@ -3,7 +3,8 @@ import CardArray from './CardArray';
 
 import SearchBox from './SearchBox';
 import './style.css';
-import Scroll from './Scroll'
+import Scroll from './Scroll';
+import ErrorBoundary from './ErrorBoundary';
 
 class App extends React.Component {
     constructor(){
@@ -34,7 +35,9 @@ class App extends React.Component {
          <h1> Robo Friends</h1>
          <SearchBox searchrobo={this.searchRobot}/>   
          <Scroll>
+        <ErrorBoundary>
         <CardArray robo={robofil}/>
+        </ErrorBoundary>
         </Scroll>
         </div>
     );
