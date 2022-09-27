@@ -1,0 +1,11 @@
+import React from 'react';
+
+const SearchBox = ({searchrobo}) => {
+    return(
+        <div className='pa2'>
+        <input className='pa3 ba b--green bg-lightest-blue' type='search' placeholder='Search Robo' onChange={searchrobo}/>
+        </div>
+    );
+}
+
+export default SearchBox;
